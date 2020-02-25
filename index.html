@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="description" content="Drip Rate Calculator">
+    <meta name="author" content="Mauricio Hiroyuki Ohphata">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:300,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/main.css">
+    <title>Drip Rate Calculator</title>
+</head>
+
+<body onload="set_calc(0)">
+    <div class="container-main d-flex h-100 mx-auto flex-column">
+        <header class="m_header text-center">
+            <h3 class="m_brand">Drip Rate Calculator</h3>
+
+            <ul class="nav  justify-content-center">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#" onclick="set_calc(0);">Macrodrip/h</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="set_calc(1);">Microdrip/h</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="set_calc(2);">Macrodrip/min</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="set_calc(3);">Microdrip/min</a>
+                </li>
+            </ul>
+
+
+            </nav>
+        </header>
+
+        <div class="container description">
+            <h2 id="ms_title"></h2>
+            <p id="ms_form"></p>
+
+        </div>
+
+        <div class="flex-container">
+            <div class="container">
+                <p id="ms_text"></p>
+            </div>
+            <div>
+                <input type="number" name="volume" id="g_volume"><label for="volume">mL</label>
+            </div>
+
+            <div>
+                <input type="number" name="tempo" id="g_tempo"><label for="tempo" id="lb_tempo">horas</label>
+            </div>
+
+            <div>
+                <button class="btn-calc" id="cal_gh" onclick="got_calc();">CALCULATE</button>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="CalcFeed" tabindex="-1" role="dialog" aria-labelledby="CalcFeed" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-body text-center">
+                        <h2 class="modal-title" id="t_message">Modal title</h2>
+                        <p id="f_message"></p>
+                        <p id="t_result"></p>
+                        <button type="button" class="btn-calc" data-dismiss="modal">CLOSE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="page-footer font-small">
+            <div class="language text-center p-2">Language:
+                <a href="#">English, </a>
+                <a href="pt/">Portugues, </a>
+                <a href="jp/">日本語.</a>
+            </div>
+            <div class="copyright text-center p-2">
+                © 2020 Copyright:
+                <a href="http://mauhiro.com/portfolio">Maurício Hiroyuki Ohphata. </a>
+            </div>
+        </footer>
+    </div>
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="main.js" type="text/javascript"></script>
+</body>
+
+</html>

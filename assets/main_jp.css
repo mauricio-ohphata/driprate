@@ -1,0 +1,200 @@
+body {
+    background-color: #00b6bd;
+    background-image: url('../assets/bg_pattern.png');
+    background-repeat: repeat;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'M PLUS Rounded 1c';
+    font-weight: 500;
+}
+
+p{
+    font-family: 'M PLUS 1p';
+    font-weight: 300;
+    font-size: 1.3rem;
+}
+
+a {
+color: #ffffff;
+}
+
+a:hover{
+    color: #ffffff;
+}
+
+.m_header {
+    background-color: #00969b;
+    display: block;
+}
+
+.m_brand {
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 20px;
+    margin: 0;
+    color: #ffffff;
+    user-select: none;
+    background-color: #00676a;
+}
+
+.m_navbar {
+    padding: .5rem 1rem;
+}
+
+.nav-item{
+    font-family: 'M PLUS Rounded 1c';
+    font-weight: 500;
+    opacity: 0.5;
+}
+
+.active{
+    opacity: 1;
+
+}
+
+.container-main {
+    max-width: 42em;
+    background-color: #f1f1f1;
+}
+
+.description {
+    text-align: center;
+}
+
+.container{
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.flex-container>div {
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 24px;
+}
+
+input {
+    max-width: 250px;
+    text-align: end;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 4px;
+
+    border: 3px solid #999;
+}
+
+#g_volume {
+    background-image: url('../assets/ic_volume.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+}
+
+#g_tempo {
+    background-image: url('../assets/ic_tempo.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+}
+
+input[type=number]:focus {
+    border: 3px solid #555;
+    outline: 0;
+}
+
+label {
+    width: 60px;
+    margin-left: 10px;
+    user-select: none;
+    font-family: 'M PLUS Rounded 1c';
+    font-weight: 500;
+}
+
+.btn-calc {
+    margin-top: 30px;
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 15px;
+    background-color: #ff3f62;
+    color: #ffffff;
+    font-family: 'M PLUS Rounded 1c';
+    font-weight: 500;
+    font-size: 1.5rem;
+    outline: none;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.btn-calc:hover {
+    background-color: #c61469; 
+}
+
+.btn-calc:after {
+    content: "";
+    background-color: #f1f1f1;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  
+.btn-calc:active:after {
+    opacity: 1;
+    transition: 0s
+}
+
+.page-footer {
+    color: rgb(255, 255, 255, 0.7) ;
+}
+
+.language{
+    color: #00969b;
+}
+
+.language a {
+    color:#00676a;
+}
+
+.copyright{
+    color: rgb(255, 255, 255, 0.7) ;
+    background-color: #00676a;
+}
+
+
+@media (max-width: 757.98px) { 
+    html, body{
+        height: auto;
+    }
+    .description {
+        margin-top: 1.5rem;
+    }
+    .container{
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    
+    input {
+        width: 200px;
+    }
+    .page-footer {
+        margin-top: 3rem;
+    }
+}
+
+@media (min-width: 576px) {
+    html, body{
+        height: 100%;
+    }
+    .description {
+        margin-top: 3rem;
+    }
+    .page-footer {
+        margin-top: auto;
+    }
+}
